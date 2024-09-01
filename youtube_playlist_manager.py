@@ -1,7 +1,8 @@
 import os
 import google_auth_oauthlib.flow
-import googleapiclient.discovery
-import googleapiclient.errors
+import googleapiclient
+import warnings
+warnings.filterwarnings("ignore", category=ImportWarning)
 
 scopes = ["https://www.googleapis.com/auth/youtube.force-ssl"]
 
